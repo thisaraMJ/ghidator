@@ -1,1 +1,1 @@
-# Ghidator
+# Ghidator Travelling Community App
