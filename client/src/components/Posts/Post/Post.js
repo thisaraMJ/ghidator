@@ -37,8 +37,8 @@ const Post = ({post, setCurrentId}) => {
          </div>
 
          <div className={classes.details}>
-            <Typography varient="body2" color="textSecondary">
-               {post.tags.map(tag => `#${tag}`)}
+            <Typography varient="body2" component='h2' color="textSecondary">
+            {post.tags.map((tag) => `#${tag} `)}
             </Typography>
          </div>
 
@@ -55,7 +55,7 @@ const Post = ({post, setCurrentId}) => {
          <CardActions className={classes.cardActions}>
             <Button size="small" color="primary" onClick={() => { dispatch(likePost(post._id)) }}>
                <ThumbUpAltIcon fontSize="small" />
-               Like
+               &nbsp;Like
                {' '+post.likeCount}
             </Button>
             <Button size="small" color="secondary" onClick={() => { dispatch(deletePost(post._id)) }}>
